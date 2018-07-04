@@ -1,0 +1,19 @@
+{
+  "name": "css-for-backenders-workshop",
+  "version": "1.0.0",
+  "description": "gulfile for the workshop",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "browser-sync": "^2.24.4",
+    "gulp": "^3.9.1",
+    "gulp-sass": "^4.0.1"
+  },
+  "devDependencies": {},
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "author": "Alvaro Gomez Sastre",
+  "license": "ISC"
+}
