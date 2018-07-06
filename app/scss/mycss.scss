@@ -1,0 +1,51 @@
+@import '_variables';
+@import '_utils';
+//this is and example of the media queries we are gonna use.
+//the code you put inside will be active when beign over 1024px of viewport.
+@media (min-width: $large) {
+}
+.blue {
+  background-color: $blue;
+  color: $white;
+}
+.red {
+  background-color: $red;
+  color: $white;
+}
+.orange {
+  background-color: $orange;
+  color: $black;
+}
+.light-orange {
+  background-color: $light-orange;
+  color: $black;
+}
+.light-red {
+  background-color: $light-red;
+  color: $black;
+}
+/*solutions*/
+.container {
+  .rectangle {
+    width: 100%;
+    box-sizing: border-box;
+    height: 125px;
+    border: 2px solid $black;
+    margin: 15px 0;
+  }
+}
+@media (min-width: $large) {
+  .container {
+    .item {
+      width: 50%;
+      float: left;
+      padding: 30px;
+    }
+    .rectangle {
+      box-sizing: border-box;
+      height: 125px;
+      border: 2px solid $black;
+      margin: 0;
+    }
+  }
+}
