@@ -28,6 +28,9 @@ h1 {
   font-size: 1.25rem;
   color: $red;
 }
+.transparent {
+  visibility: hidden;
+}
 .index-wrapper {
   display: flex;
   flex-direction: column;
