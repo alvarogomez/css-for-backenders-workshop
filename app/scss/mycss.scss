@@ -29,7 +29,7 @@
   .rectangle {
     width: 100%;
     box-sizing: border-box;
-    height: 175px;
+    height: 180px;
     border: 2px solid $black;
     margin: 15px 0;
     .horizontal-division {
@@ -44,6 +44,29 @@
   .half-height {
     height: 50%;
   }
+  .badge {
+    position: relative;
+    height: 80%;
+    top: 10%;
+  }
+  .big-centered-span {
+    font-size: 2rem;
+    line-height: 90px;
+  }
+  .item {
+    position: relative;
+  }
+  .star-icon {
+    position: absolute;
+    box-sizing: border-box;
+    background-color: $white;
+    right: 0px;
+    top: 0px;
+    width: 30px;
+    height: 30px;
+    border: 2px solid $black;
+    line-height: 25px;
+  }
 }
 @media (min-width: $large) {
   .container {
@@ -54,9 +77,16 @@
     }
     .rectangle {
       box-sizing: border-box;
-      height: 175px;
+      height: 180px;
       border: 2px solid $black;
       margin: 0;
+      &.fixed-margin {
+        margin: 15px 0;
+      }
+    }
+    .star-icon {
+      right: 30px;
+      top: 30px;
     }
   }
 }
