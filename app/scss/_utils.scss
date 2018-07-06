@@ -9,6 +9,7 @@ html {
 body {
   height: 100%;
   margin: 0;
+  background-color: $ivory;
 }
 * {
   box-sizing: border-box;
@@ -110,6 +111,24 @@ h1 {
     content: '';
     clear: both;
     height: 0;
+  }
+}
+.exercise-3-example {
+  margin-left: 1rem;
+  margin-top: 1rem;
+  display: grid;
+  width: 175px;
+  height: 75px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  border: 2px solid $black;
+  .division {
+    height: 100%;
+    width: 100%;
+    &.two-rows {
+      grid-row-start: 1;
+      grid-row-end: -1;
+    }
   }
 }
 .exercise-wrapper {
