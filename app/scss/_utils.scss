@@ -9,7 +9,7 @@ html {
 body {
   height: 100%;
   margin: 0;
-  background-color: $ivory;
+  background-color: $light-grey;
 }
 * {
   box-sizing: border-box;
@@ -23,6 +23,10 @@ h1 {
   font-size: 2rem;
   text-transform: uppercase;
   margin: 0;
+}
+.url-link {
+  font-size: 1.25rem;
+  color: $red;
 }
 .index-wrapper {
   display: flex;
@@ -74,7 +78,6 @@ h1 {
 .go-back-bar {
   padding: 0.2rem 0;
   background-color: $light-blue;
-  border-bottom: 2px dotted $black;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -137,10 +140,10 @@ h1 {
   background-color: $light-blue;
   .exercise-description {
     padding: 1rem;
-    border-bottom: 2px dotted $black;
+    border: 2px dotted $black;
     width: 100%;
     text-align: left;
-    background-color: $light-red;
+    background-color: $ivory;
     h3 {
       margin: 0.5rem 0;
     }

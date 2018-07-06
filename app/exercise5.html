@@ -16,20 +16,16 @@
   <div class="exercise-wrapper">
     <div class="go-back-bar">
       <a href="./index.html" title="go back to index"><i class="fas fa-arrow-alt-circle-left"></i><span>GO TO INDEX</span></a>
-      <h3>EXERCISE FOUR</h3>
+      <h3>EXERCISE FIVE</h3>
       <a href="./exercise5.html" title="go next exercise"><span>NEXT EXERCISE</span><i class="fas fa-arrow-alt-circle-right"></i></a>
     </div>
     <div class="exercise-description">
       <h3>EXERCISE REQUIREMENTS</h3>
-      <span>Put the image '.assets/potato.png' centered inside the red rectangle.</span>
-      <span>Put a black border of 2px at the right side of the red rectangle.</span>
-      <span>Put the sentence 'CSS RULES' with font size of '2rem' centered inside the blue rectangle.</span>
-      <span>Put the sentence 'IT'S COOL' with font size of '2rem' centered inside the orange rectangle.</span>
-      <span>Put this star: <i class="far fa-star"></i>(inspect and copy) inside a 30x30 px square with a black border of 2px. In the upper right corner of the main rectangle.Review it works in mobile also</span>
+      <span>Make the images on red rectangle scale its size a 10% and rotate 360deg when hovering over them.</span>
+      <span>When hovering over right side of main rectangle, the blue rectangle should grow vertically a 25% while the orange one will decrease vertically a 25%.</span>
+      <span>With the last hover, the blue and orange rectangles must continue wrapped inside the right side of the main container.</span>
       <h3>TIPS</h3>
-      <span>for controlling images usually you define a certain width or height. Ask yourself what is the fixed dimensions axis of the container.</span>
-      <span>for centering a single line text vertically, the most easy way is to put the same line-height as container's height.</span>
-      <span>for the star you will need to position it absolutely, if doubts about this ask me...</span>
+      <span>You will need to use transforms for the hover effects,you can get some help in this <a class="url-link" href="https://css-tricks.com/almanac/properties/t/transform/">link</a></span>
     </div>
     <!--SOLUTION-->
     <div class="container clearfix">
@@ -37,10 +33,10 @@
         <div class="rectangle clearfix">
           <div class="horizontal-division right-border">
             <div class="full-height red">
-              <img class="badge" src="./assets/potato.png" />
+              <img class="badge hoverable" src="./assets/potato.png" />
             </div>
           </div>
-          <div class="horizontal-division">
+          <div class="horizontal-division hoverable">
             <div class="half-height blue">
               <span class="big-centered-span">CSS RULES</span>
             </div>
@@ -57,10 +53,10 @@
         <div class="rectangle clearfix">
           <div class="horizontal-division right-border">
             <div class="full-height red">
-              <img class="badge" src="./assets/potato.png" />
+              <img class="badge hoverable" src="./assets/potato.png" />
             </div>
           </div>
-          <div class="horizontal-division">
+          <div class="horizontal-division hoverable">
             <div class="half-height blue">
               <span class="big-centered-span">CSS RULES</span>
             </div>
@@ -77,10 +73,10 @@
         <div class="rectangle clearfix">
           <div class="horizontal-division right-border">
             <div class="full-height red">
-              <img class="badge" src="./assets/potato.png" />
+              <img class="badge hoverable" src="./assets/potato.png" />
             </div>
           </div>
-          <div class="horizontal-division">
+          <div class="horizontal-division hoverable">
             <div class="half-height blue">
               <span class="big-centered-span">CSS RULES</span>
             </div>
@@ -97,10 +93,10 @@
         <div class="rectangle clearfix">
           <div class="horizontal-division right-border">
             <div class="full-height red">
-              <img class="badge" src="./assets/potato.png" />
+              <img class="badge hoverable" src="./assets/potato.png" />
             </div>
           </div>
-          <div class="horizontal-division">
+          <div class="horizontal-division hoverable">
             <div class="half-height blue">
               <span class="big-centered-span">CSS RULES</span>
             </div>
