@@ -1,6 +1,5 @@
 const gulp = require('gulp'),
   browserSync = require('browser-sync').create(),
-  s3 = require('gulp-s3-upload')({}),
   sass = require('gulp-sass');
 
 // Static Server + watching scss/html files
