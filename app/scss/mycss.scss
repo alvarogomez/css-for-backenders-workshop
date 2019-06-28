@@ -1,117 +1,31 @@
 @import '_variables';
 @import '_utils';
+
 //this is and example of the media queries we are gonna use.
 //the code you put inside will be active when beign over 1024px of viewport.
-@media (min-width: $large) {
-}
+@media (min-width: $large) {}
+
 .blue {
   background-color: $blue;
   color: $white;
 }
+
 .red {
   background-color: $red;
   color: $white;
 }
+
 .orange {
   background-color: $orange;
   color: $black;
 }
+
 .light-orange {
   background-color: $light-orange;
   color: $black;
 }
+
 .light-red {
   background-color: $light-red;
   color: $black;
-}
-/*solutions*/
-.container {
-  .rectangle {
-    width: 100%;
-    box-sizing: border-box;
-    height: 180px;
-    border: 2px solid $black;
-    margin: 15px 0;
-    .horizontal-division {
-      width: 50%;
-      height: 100%;
-      float: left;
-      &.right-border {
-        border-right: 2px solid $black;
-      }
-      &.hoverable {
-        &:hover {
-          transition: transform 0.4s ease-in-out;
-          transform: translateY(6.25%);
-          .half-height {
-            &:first-child {
-              transition: transform 0.4s ease-in-out;
-              transform: scaleY(1.25);
-            }
-            &:nth-child(2) {
-              transition: transform 0.4s ease-in-out;
-              transform: scaleY(0.75);
-            }
-          }
-        }
-      }
-    }
-  }
-  .full-height {
-    height: 100%;
-  }
-  .half-height {
-    height: 50%;
-  }
-  .badge {
-    position: relative;
-    height: 80%;
-    top: 10%;
-    &.hoverable {
-      &:hover {
-        transition: transform 0.4s ease-in-out;
-        transform: scale(1.2) rotateZ(360deg);
-      }
-    }
-  }
-  .big-centered-span {
-    font-size: 2rem;
-    line-height: 90px;
-  }
-  .item {
-    position: relative;
-  }
-  .star-icon {
-    position: absolute;
-    box-sizing: border-box;
-    background-color: $white;
-    right: 0px;
-    top: 0px;
-    width: 30px;
-    height: 30px;
-    border: 2px solid $black;
-    line-height: 25px;
-  }
-}
-@media (min-width: $large) {
-  .container {
-    .item {
-      width: 50%;
-      float: left;
-      padding: 30px;
-    }
-    .rectangle {
-      box-sizing: border-box;
-      height: 180px;
-      border: 2px solid $black;
-      margin: 0;
-      &.fixed-margin {
-        margin: 15px 0;
-      }
-    }
-    .star-icon {
-      right: 30px;
-      top: 30px;
-    }
-  }
 }

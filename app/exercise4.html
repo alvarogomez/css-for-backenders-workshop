@@ -1,119 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-  <title>CSS Workshop 101</title>
-  <link rel="icon" href="assets/css-logo.png">
-  <meta name="description" content="Grid Sandbox">
-  <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
-  <link rel="stylesheet" href="css/mycss.css">
-</head>
-<body>
-  <div class="exercise-wrapper">
-    <div class="go-back-bar">
-      <a href="./index.html" title="go back to index"><i class="fas fa-arrow-alt-circle-left"></i><span>GO TO INDEX</span></a>
-      <h3>EXERCISE FOUR</h3>
-      <a href="./exercise5.html" title="go next exercise"><span>NEXT EXERCISE</span><i class="fas fa-arrow-alt-circle-right"></i></a>
-    </div>
-    <div class="exercise-description">
-      <h3>EXERCISE REQUIREMENTS</h3>
-      <span>Put the image '.assets/potato.png' centered inside the red rectangle.</span>
-      <span>Put a black border of 2px at the right side of the red rectangle.</span>
-      <span>Put the sentence 'CSS RULES' with font size of '2rem' centered inside the blue rectangle.</span>
-      <span>Put the sentence 'IT'S COOL' with font size of '2rem' centered inside the orange rectangle.</span>
-      <span>Put this star: <i class="far fa-star"></i>(inspect and copy) inside a 30x30 px square with a black border of 2px. In the upper right corner of the main rectangle.Review it works in mobile also</span>
-      <h3>TIPS</h3>
-      <span>for controlling images usually you define a certain width or height. Ask yourself what is the fixed dimensions axis of the container.</span>
-      <span>for centering a single line text vertically, the most easy way is to put the same line-height as container's height.</span>
-      <span>for the star you will need to position it absolutely, if doubts about this ask me...</span>
-    </div>
-    <!--SOLUTION-->
-    <div class="container clearfix">
-      <div class="item">
-        <div class="rectangle clearfix">
-          <div class="horizontal-division right-border">
-            <div class="full-height red">
-              <img class="badge" src="./assets/potato.png" />
-            </div>
-          </div>
-          <div class="horizontal-division">
-            <div class="half-height blue">
-              <span class="big-centered-span">CSS RULES</span>
-            </div>
-            <div class="half-height orange">
-              <span class="big-centered-span">IT'S COOL</span>
-            </div>
-          </div>
-          <div class="star-icon">
-            <i class="far fa-star"></i>
-          </div>
-        </div>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=no"
+    />
+    <title>CSS Workshop 101</title>
+    <link rel="icon" href="assets/css-logo.png" />
+    <meta name="description" content="Grid Sandbox" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Oswald"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.1.0/css/all.css"
+      integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/mycss.css" />
+  </head>
+  <body>
+    <div class="exercise-wrapper">
+      <div class="go-back-bar">
+        <a href="./index.html" title="go back to index"
+          ><i class="fas fa-arrow-alt-circle-left"></i
+          ><span>GO TO INDEX</span></a
+        >
+        <h3>EXERCISE FOUR</h3>
+        <a href="./exercise5.html" title="go next exercise"
+          ><span>NEXT EXERCISE</span
+          ><i class="fas fa-arrow-alt-circle-right"></i
+        ></a>
       </div>
-      <div class="item">
-        <div class="rectangle clearfix">
-          <div class="horizontal-division right-border">
-            <div class="full-height red">
-              <img class="badge" src="./assets/potato.png" />
-            </div>
-          </div>
-          <div class="horizontal-division">
-            <div class="half-height blue">
-              <span class="big-centered-span">CSS RULES</span>
-            </div>
-            <div class="half-height orange">
-              <span class="big-centered-span">IT'S COOL</span>
-            </div>
-          </div>
-          <div class="star-icon">
-            <i class="far fa-star"></i>
-          </div>
-        </div>
-      </div>
-      <div class="item">
-        <div class="rectangle clearfix">
-          <div class="horizontal-division right-border">
-            <div class="full-height red">
-              <img class="badge" src="./assets/potato.png" />
-            </div>
-          </div>
-          <div class="horizontal-division">
-            <div class="half-height blue">
-              <span class="big-centered-span">CSS RULES</span>
-            </div>
-            <div class="half-height orange">
-              <span class="big-centered-span">IT'S COOL</span>
-            </div>
-          </div>
-          <div class="star-icon">
-            <i class="far fa-star"></i>
-          </div>
-        </div>
-      </div>
-      <div class="item">
-        <div class="rectangle clearfix">
-          <div class="horizontal-division right-border">
-            <div class="full-height red">
-              <img class="badge" src="./assets/potato.png" />
-            </div>
-          </div>
-          <div class="horizontal-division">
-            <div class="half-height blue">
-              <span class="big-centered-span">CSS RULES</span>
-            </div>
-            <div class="half-height orange">
-              <span class="big-centered-span">IT'S COOL</span>
-            </div>
-          </div>
-          <div class="star-icon">
-            <i class="far fa-star"></i>
-          </div>
-        </div>
+      <div class="exercise-description">
+        <h3>EXERCISE REQUIREMENTS</h3>
+        <p>
+          Put the image '.assets/potato.png' centered inside the red rectangle.
+        </p>
+        <p>Put a black border of 2px at the right side of the red rectangle.</p>
+        <p>
+          Put the sentence 'CSS RULES' with font size of '2rem' centered inside
+          the blue rectangle.
+        </p>
+        <p>
+          Put the sentence 'IT'S COOL' with font size of '2rem' centered inside
+          the orange rectangle.
+        </p>
+        <p>
+          Put this star: <i class="far fa-star"></i>(inspect and copy) inside a
+          30x30 px square with a black border of 2px. In the upper right corner
+          of the main rectangle.Review it works in mobile also
+        </p>
+        <h3>TIPS</h3>
+        <p>
+          for controlling images usually you define a certain width or height.
+          Ask yourself what is the fixed dimensions axis of the container.
+        </p>
+        <p>
+          for centering a single line text vertically, the most easy way is to
+          put the same line-height as container's height.
+        </p>
+        <p>
+          for the star you will need to position it absolutely, if doubts about
+          this ask me...
+        </p>
       </div>
     </div>
-  </div>
-</body>
+  </body>
 </html>

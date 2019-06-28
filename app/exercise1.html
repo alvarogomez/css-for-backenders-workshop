@@ -1,42 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-  <title>CSS Workshop 101</title>
-  <link rel="icon" href="assets/css-logo.png">
-  <meta name="description" content="Grid Sandbox">
-  <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
-  <link rel="stylesheet" href="css/mycss.css">
-</head>
-<body>
-  <div class="exercise-wrapper">
-    <div class="go-back-bar">
-      <a href="./index.html" title="go back to index"><i class="fas fa-arrow-alt-circle-left"></i><span>GO TO INDEX</span></a>
-      <h3>EXERCISE ONE</h3>
-      <a href="./exercise2.html" title="go next exercise"><span>NEXT EXERCISE</span><i class="fas fa-arrow-alt-circle-right"></i></a>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=no"
+    />
+    <title>CSS Workshop 101</title>
+    <link rel="icon" href="assets/css-logo.png" />
+    <meta name="description" content="Grid Sandbox" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Oswald"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.1.0/css/all.css"
+      integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/mycss.css" />
+  </head>
+  <body>
+    <div class="exercise-wrapper">
+      <div class="go-back-bar">
+        <a href="./index.html" title="go back to index"
+          ><i class="fas fa-arrow-alt-circle-left"></i
+          ><span>GO TO INDEX</span></a
+        >
+        <h2>EXERCISE ONE</h2>
+        <a href="./exercise2.html" title="go next exercise"
+          ><span>NEXT EXERCISE</span
+          ><i class="fas fa-arrow-alt-circle-right"></i
+        ></a>
+      </div>
+      <div class="exercise-description">
+        <h3>GENERAL TIPS</h3>
+        <p>
+          For solving this exercises be sure you have the command gulp serve
+          running, it will compile the changes in your sass file and will
+          refresh your browser automatically.
+        </p>
+        <p>
+          Put your sass code inside the file mycss.scss to solve the exercises.
+        </p>
+        <p>Always put your html inside the exercise-wrapper div.</p>
+        <p></p>
+          Try to resuse the code from previous exercises if posible, try to
+          think in scalable css.
+        </p>
+        <h3>EXERCISE REQUIREMENTS</h3>
+        <p>
+          Create 4 rectangles that ocupy the full with of the exercise
+          wrapper(blue one) and 180px of height.
+        </p>
+        <p>
+          Each of the rectangle should have a diferent colour, and 2px $black
+          border, please use the classes i've provided for this purpose.
+        </p>
+        <p>
+          The containers should be stacked and separated 15px from each other
+          and other divs inside the main wrapper.
+        </p>
+      </div>
     </div>
-    <div class="exercise-description">
-      <h3>GENERAL TIPS</h3>
-      <span>For solving this exercises be sure you have the command gulp serve running, it will compile the changes in your sass file and will refresh your browser automatically.</span>
-      <span>Put your sass code inside the file mycss.scss to solve the exercises.</span>
-      <span>Always put your html inside the exercise-wrapper div.</span>
-      <span>Try to resuse the code from previous exercises if posible, try to think in scalable css.</span>
-      <h3>EXERCISE REQUIREMENTS</h3>
-      <span>Create 4 rectangles that ocupy the full with of the exercise wrapper(blue one) and 180px of height.</span>
-      <span>Each of the rectangle should have a diferent colour, and 2px $black border, please use the classes i've provided for this purpose.</span>
-      <span>The containers should be stacked and separated 15px from each other and other divs inside the main wrapper.</span>
-    </div>
-    <!--SOLUTION-->
-    <div class="container">
-      <div class="red rectangle fixed-margin"></div>
-      <div class="orange rectangle fixed-margin"></div>
-      <div class="blue rectangle fixed-margin"></div>
-      <div class="light-orange rectangle fixed-margin"></div>
-    </div>
-  </div>
-</body>
+  </body>
 </html>

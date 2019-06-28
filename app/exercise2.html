@@ -1,50 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-  <title>CSS Workshop 101</title>
-  <link rel="icon" href="assets/css-logo.png">
-  <meta name="description" content="Grid Sandbox">
-  <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
-  <link rel="stylesheet" href="css/mycss.css">
-</head>
-<body>
-  <div class="exercise-wrapper">
-    <div class="go-back-bar">
-      <a href="./index.html" title="go back to index"><i class="fas fa-arrow-alt-circle-left"></i><span>GO TO INDEX</span></a>
-      <h3>EXERCISE TWO</h3>
-      <a href="./exercise3.html" title="go next exercise"><span>NEXT EXERCISE</span><i class="fas fa-arrow-alt-circle-right"></i></a>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=no"
+    />
+    <title>CSS Workshop 101</title>
+    <link rel="icon" href="assets/css-logo.png" />
+    <meta name="description" content="Grid Sandbox" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Oswald"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.1.0/css/all.css"
+      integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/mycss.css" />
+  </head>
+  <body>
+    <div class="exercise-wrapper">
+      <div class="go-back-bar">
+        <a href="./index.html" title="go back to index"
+          ><i class="fas fa-arrow-alt-circle-left"></i
+          ><span>GO TO INDEX</span></a
+        >
+        <h2>EXERCISE TWO</h2>
+        <a href="./exercise3.html" title="go next exercise"
+          ><span>NEXT EXERCISE</span
+          ><i class="fas fa-arrow-alt-circle-right"></i
+        ></a>
+      </div>
+      <div class="exercise-description">
+        <h3>EXERCISE REQUIREMENTS</h3>
+        <p>Reuse the container with the rectangles of exercise one.</p>
+        <p>
+          Now make the containers 50% with of exercise wrapper and separate and
+          make them separate 30px from each other horizontally only in desktop
+          resolutions (>1024px)
+        </p>
+        <h3>TIPS</h3>
+        <p>
+          Remember the float property will help you stack containers
+          horizontally.
+        </p>
+        <p>Use the media query provided as example in mycss.scss.</p>
+        <p>
+          Use the property box-sizing: border-box that calculates a percentage
+          including borders and paddings.
+        </p>
+        <p>
+          Remember that margins are added to percentage although using
+          box-sizing: border-box.
+        </p>
+        <p>
+          Add the clearfix class(provided by me) to the rectangles container. It
+          solves the problem of a container having 0 height if only contains
+          floated elements.
+        </p>
+      </div>
     </div>
-    <div class="exercise-description">
-      <h3>EXERCISE REQUIREMENTS</h3>
-      <span>Reuse the container with the rectangles of exercise one.</span>
-      <span> Now make the containers 50% with of exercise wrapper and separate and make them separate 30px from each other horizontally only in desktop resolutions (>1024px)</span>
-      <h3>TIPS</h3>
-      <span>Remember the float property will help you stack containers horizontally.</span>
-      <span>Use the media query provided as example in mycss.scss.</span>
-      <span>Use the property box-sizing: border-box that calculates a percentage including borders and paddings.</span>
-      <span>Remember that margins are added to percentage althoug using box-sizing: border-box.</span>
-      <span>Add the clearfix class(provided by me) to the rectangles container. It solves the problem of a container having 0 height if only contains floated elements.</span>
-    </div>
-    <!--SOLUTION-->
-    <div class="container clearfix">
-      <div class="item">
-        <div class="red rectangle"></div>
-      </div>
-      <div class="item">
-        <div class="orange rectangle"></div>
-      </div>
-      <div class="item">
-        <div class="blue rectangle"></div>
-      </div>
-      <div class="item">
-        <div class="light-orange rectangle"></div>
-      </div>
-    </div>
-  </div>
-</body>
+  </body>
 </html>
